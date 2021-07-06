@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://linkml.github.io/linkml-registry/registry/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Registry - LinkML Registry</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">LinkML Registry</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../home/" class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Registry</a>
+                            </li>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Index</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../credits/" class="nav-link">Credits</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../home/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href=".." class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/linkml/linkml-registry/edit/master/docs/registry.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#linkml-registry-entries" class="nav-link">LinkML Registry Entries</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#linkml-model-linkml-schema-metamodel" class="nav-link">LinkML Model : LinkML Schema Metamodel</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linkml-template-configuration-model-linkml-template-configuration" class="nav-link">LinkML Template Configuration Model : LinkML template configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nmdc-nmdc-schema" class="nav-link">NMDC : NMDC Schema</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sssom-simple-standard-sharing-object-mappings" class="nav-link">SSSOM : Simple Standard Sharing Object Mappings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kgcl-knowledge-graph-change-language" class="nav-link">KGCL : Knowledge Graph Change Language</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kgviz-knowledge-graph-visualization-configuration" class="nav-link">KGViz : Knowledge Graph Visualization Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#semantic-sql-semantic-sql" class="nav-link">Semantic Sql : Semantic SQL</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#chemistry-schema-chemistry-data-model" class="nav-link">Chemistry Schema : Chemistry Data Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ccdh-crdc-h-model" class="nav-link">CCDH : CRDC-H Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ontology-associations-common-association-file-formats" class="nav-link">ontology-associations : common association file formats</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gff3-genome-feature-format-linkml-rendering" class="nav-link">GFF3 : Genome Feature Format LinkML rendering</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#monochrom-chromosome-ontology-and-etl" class="nav-link">Monochrom : Chromosome ontology and ETL</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gsc-mixs" class="nav-link">GSC MIxS :</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#babelon-a-schema-for-describing-translations-and-language-profiles-for-ontologies" class="nav-link">Babelon : A schema for describing translations and language profiles for ontologies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hot-termci" class="nav-link">HOT-TermCI :</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#agr-persistent-schema" class="nav-link">AGR persistent schema :</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#agr-curation-schema-alliance-schema-prototype-phenotype-and-disease-annotation" class="nav-link">AGR curation schema : Alliance Schema Prototype Phenotype and Disease Annotation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sesar" class="nav-link">SESAR :</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#obographs" class="nav-link">OBOGraphs :</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ghgc-metadata-metadata-schema-for-the-german-human-genome-phenome-archive-ghga" class="nav-link">GHGC Metadata : Metadata schema for the German Human Genome-Phenome Archive (GHGA)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mianct-minimal-information-about-a-new-cell-type" class="nav-link">MIANCT : Minimal Information About a new Cell Type</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="linkml-registry-entries">LinkML Registry Entries</h1>
+<h2 id="linkml-model-linkml-schema-metamodel">LinkML Model : LinkML Schema Metamodel</h2>
+<p>A metamodel for defining linked open data schemas</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">LinkML Model</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">LinkML Schema Metamodel</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">A metamodel for defining linked open data schemas</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://linkml.github.io/linkml-model/docs/">https://linkml.github.io/linkml-model/docs/</a></td>
+</tr>
+<tr>
+<td align="center">schema_url</td>
+<td align="center"><a href="https://github.com/linkml/linkml-model/blob/main/model/schema/meta.yaml">https://github.com/linkml/linkml-model/blob/main/model/schema/meta.yaml</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">linkml/linkml-model</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">model/schema/meta.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['meta']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">19</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">125</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">14</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.9182389937106918</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.9937106918238994</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-template-configuration-model-linkml-template-configuration">LinkML Template Configuration Model : LinkML template configuration</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">LinkML Template Configuration Model</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">LinkML template configuration</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://linkml.github.io/template-config-model/">https://linkml.github.io/template-config-model/</a></td>
+</tr>
+<tr>
+<td align="center">schema_url</td>
+<td align="center"><a href="https://github.com/linkml/template-config-model/blob/main/model/schema/config_model.yaml">https://github.com/linkml/template-config-model/blob/main/model/schema/config_model.yaml</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">linkml/template-config-model</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center">CC-0</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['meta']</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nmdc-nmdc-schema">NMDC : NMDC Schema</h2>
+<p>Schema for National Microbiome Data Collaborative (NMDC). This schem is organized into 3 separate modules:</p>
+<p>This schema is organized into distinct modules:</p>
+<ul>
+<li>a set of core types for representing data values</li>
+<li>the mixs schema (auto-translated from mixs excel)</li>
+<li>annotation schema</li>
+<li>the NMDC schema itself</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">NMDC</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">NMDC Schema</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">Schema for National Microbiome Data Collaborative (NMDC). This schem is organized into 3 separate modules:</td>
+</tr>
+</tbody>
+</table>
+<p>This schema is organized into distinct modules:</p>
+<ul>
+<li>a set of core types for representing data values</li>
+<li>the mixs schema (auto-translated from mixs excel)</li>
+<li>annotation schema</li>
+<li>the NMDC schema itself|
+|homepage|<a href="https://microbiomedata.github.io/nmdc-schema/">https://microbiomedata.github.io/nmdc-schema/</a>|
+|github_repo|microbiomedata/nmdc-schema|
+|schema_relative_path|src/schema/nmdc.yaml|
+|license|<a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a>|
+|domain|['environmental microbiology']|
+|class_count|48|
+|slot_count|884|
+|enum_count|1|
+|type_count|18|
+|github_stars|4|
+|proportion_elements_with_a_description|0.8696109358569927|
+|proportion_elements_mapped|0.9989484752891693|</li>
+</ul>
+<h2 id="sssom-simple-standard-sharing-object-mappings">SSSOM : Simple Standard Sharing Object Mappings</h2>
+<p>Datamodel for Simple Standard for Sharing Ontology Mappings (SSSOM)</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">SSSOM</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Simple Standard Sharing Object Mappings</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">Datamodel for Simple Standard for Sharing Ontology Mappings (SSSOM)</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://sssom-py.readthedocs.io/">https://sssom-py.readthedocs.io/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">mapping-commons/sssom-py</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">schema/sssom.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['information']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">49</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">14</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.9850746268656716</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.9850746268656716</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kgcl-knowledge-graph-change-language">KGCL : Knowledge Graph Change Language</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">KGCL</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Knowledge Graph Change Language</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://cmungall.github.io/knowledge-graph-change-language/">https://cmungall.github.io/knowledge-graph-change-language/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">cmungall/knowledge-graph-change-language</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">src/schema/kgcl.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center">CC-0</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['knowledge graphs']</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">errors</td>
+<td align="center">['Error with obtaining schema for KGCL: Conflicting URIs (https://w3id.org/kgcl/basics, https://w3id.org/kgcl/prov) for item: description']</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kgviz-knowledge-graph-visualization-configuration">KGViz : Knowledge Graph Visualization Configuration</h2>
+<p>A data model for describing configurations / stylesheets for visualzing graphs, and in particular Knowledge Graphs or Ontologies. These graphs are characterized by having meaningful edge labels, node categories, IDs or URIs on each element, as well as additional rich metadata on the nodes or edges.
+An example of a use of this is https://github.com/cmungall/obographviz</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">KGViz</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Knowledge Graph Visualization Configuration</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">A data model for describing configurations / stylesheets for visualzing graphs, and in particular Knowledge Graphs or Ontologies. These graphs are characterized by having meaningful edge labels, node categories, IDs or URIs on each element, as well as additional rich metadata on the nodes or edges.</td>
+</tr>
+<tr>
+<td align="center">An example of a use of this is https://github.com/cmungall/obographviz</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://berkeleybop.github.io/kgviz-model/">https://berkeleybop.github.io/kgviz-model/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">berkeleybop/kgviz-model</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">model/schema/kgviz.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['visualization']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">30</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.5384615384615384</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.9538461538461539</td>
+</tr>
+</tbody>
+</table>
+<h2 id="semantic-sql-semantic-sql">Semantic Sql : Semantic SQL</h2>
+<p>A datamodel for RDF, OWL, and OBO Ontologies designed to work harmoniously with SQL databases.</p>
+<p>Note that the primary purpose of this linkml schema is to organize and define SQL VIEWs to
+be used on top of a generic SQL database following the rdftab statements schema.
+These SQL views are encoded with the <code>sqlviews&gt;&gt;</code> tag inside the yaml.</p>
+<p>We use linkml to do this rather than a simple SQL DDL file because linkml gives
+us a standard way to do things such as:</p>
+<ul>
+<li>attach descriptions to each view</li>
+<li>define a data dictionary of all columns used, together with domains/ranges</li>
+<li>modular structure with imports</li>
+<li>the ability to attach rich semantic metadata to each schema element</li>
+</ul>
+<p>Additionally, the framework provides automatic compilation to SQLAlchemy models,
+and tools for being able to turn views into indexed tables for efficient querying,
+as well as a rich searchable documentation system and other tooling.</p>
+<p>This schema is best browsed online: https://cmungall.github.io/semantic-sql/</p>
+<p>Note that things are in flux, and there some oddities that need ironed out, see
+issues for details</p>
+<p>See the <a href="https://github.com/cmungall/semantic-sql">github repo</a> for code to convert
+from the linkml yaml into SQL DDL</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">Semantic Sql</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Semantic SQL</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">A datamodel for RDF, OWL, and OBO Ontologies designed to work harmoniously with SQL databases.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the primary purpose of this linkml schema is to organize and define SQL VIEWs to
+be used on top of a generic SQL database following the rdftab statements schema.
+These SQL views are encoded with the <code>sqlviews&gt;&gt;</code> tag inside the yaml.</p>
+<p>We use linkml to do this rather than a simple SQL DDL file because linkml gives
+us a standard way to do things such as:</p>
+<ul>
+<li>attach descriptions to each view</li>
+<li>define a data dictionary of all columns used, together with domains/ranges</li>
+<li>modular structure with imports</li>
+<li>the ability to attach rich semantic metadata to each schema element</li>
+</ul>
+<p>Additionally, the framework provides automatic compilation to SQLAlchemy models,
+and tools for being able to turn views into indexed tables for efficient querying,
+as well as a rich searchable documentation system and other tooling.</p>
+<p>This schema is best browsed online: https://cmungall.github.io/semantic-sql/</p>
+<p>Note that things are in flux, and there some oddities that need ironed out, see
+issues for details</p>
+<p>See the <a href="https://github.com/cmungall/semantic-sql">github repo</a> for code to convert
+from the linkml yaml into SQL DDL|
+|homepage|<a href="https://cmungall.github.io/semantic-sql/">https://cmungall.github.io/semantic-sql/</a>|
+|github_repo|cmungall/semantic-sql|
+|schema_relative_path|src/schema/semsql.yaml|
+|license|<a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a>|
+|domain|['ontologies']|
+|class_count|98|
+|slot_count|80|
+|enum_count|0|
+|type_count|16|
+|github_stars|7|
+|proportion_elements_with_a_description|0.5824742268041238|
+|proportion_elements_mapped|1.0|</p>
+<h2 id="chemistry-schema-chemistry-data-model">Chemistry Schema : Chemistry Data Model</h2>
+<p>A data model for managing information about chemical entities, ranging from atoms through molecules to complex mixtures.
+Aspects of this have been cribbed from various sources including CHEBI, SIO, Wikipedia/Wikidata, the NCATS Translator Chemical Working Group, but all mistakes are my own.
+For full context/motivation see the <a href="https://github.com/cmungall/chem-schema">GitHub repo</a>.</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">Chemistry Schema</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Chemistry Data Model</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">A data model for managing information about chemical entities, ranging from atoms through molecules to complex mixtures.</td>
+</tr>
+<tr>
+<td align="center">Aspects of this have been cribbed from various sources including CHEBI, SIO, Wikipedia/Wikidata, the NCATS Translator Chemical Working Group, but all mistakes are my own.</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">For full context/motivation see the <a href="https://github.com/cmungall/chem-schema">GitHub repo</a>.</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://cmungall.github.io/chem-schema/">https://cmungall.github.io/chem-schema/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">cmungall/chem-schema</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">src/schema/chem.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['chemistry']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">120</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">266</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">22</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.4648910411622276</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.9903147699757869</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ccdh-crdc-h-model">CCDH : CRDC-H Model</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">CCDH</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">CRDC-H Model</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://cancerdhc.github.io/ccdhmodel">https://cancerdhc.github.io/ccdhmodel</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">cancerdhc/ccdhmodel</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center">CC-0</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['cancer']</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ontology-associations-common-association-file-formats">ontology-associations : common association file formats</h2>
+<p>Various association data models</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">ontology-associations</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">common association file formats</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">Various association data models</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://biodatamodels.github.io/ontology-associations/">https://biodatamodels.github.io/ontology-associations/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">biodatamodels/ontology-associations</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">src/schema/all.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['genomics']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">33</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">124</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">18</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">25</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.31</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.94</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gff3-genome-feature-format-linkml-rendering">GFF3 : Genome Feature Format LinkML rendering</h2>
+<p>Playing around with GFF spec</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">GFF3</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Genome Feature Format LinkML rendering</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">Playing around with GFF spec</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://biodatamodels.github.io/gff-schema/">https://biodatamodels.github.io/gff-schema/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">biodatamodels/gff-schema</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">src/schema/gff.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['genomics']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">38</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.5692307692307692</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.9538461538461539</td>
+</tr>
+</tbody>
+</table>
+<h2 id="monochrom-chromosome-ontology-and-etl">Monochrom : Chromosome ontology and ETL</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">Monochrom</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Chromosome ontology and ETL</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://monarch-initiative.github.io/monochrom/">https://monarch-initiative.github.io/monochrom/</a></td>
+</tr>
+<tr>
+<td align="center">schema_url</td>
+<td align="center"><a href="https://github.com/monarch-initiative/monochrom/blob/master/model/schema/chromo.yaml">https://github.com/monarch-initiative/monochrom/blob/master/model/schema/chromo.yaml</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">monarch-initiative/monochrom</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center">CC-0</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['genomics']</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gsc-mixs">GSC MIxS :</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">GSC MIxS</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['genomics']</td>
+</tr>
+</tbody>
+</table>
+<h2 id="babelon-a-schema-for-describing-translations-and-language-profiles-for-ontologies">Babelon : A schema for describing translations and language profiles for ontologies</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">Babelon</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">A schema for describing translations and language profiles for ontologies</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://matentzn.github.io/babelon/">https://matentzn.github.io/babelon/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">matentzn/babelon</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center">CC-0</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['ontologies']</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hot-termci">HOT-TermCI :</h2>
+<p>Terminology Core Common Model</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">HOT-TermCI</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">Terminology Core Common Model</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://github.com/HOT-Ecosystem/TermCI-model">https://github.com/HOT-Ecosystem/TermCI-model</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">HOT-Ecosystem/TermCI-model</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">src/schema/tccm_schema.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['clinical']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">14</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.9705882352941176</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="agr-persistent-schema">AGR persistent schema :</h2>
+<p>Alliance Schema Prototype</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">AGR persistent schema</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">Alliance Schema Prototype</td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">alliance-genome/agr_persistent_schema</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">src/schema/alliance_schema.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['genomics']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">31</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">158</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.6401869158878505</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.9532710280373832</td>
+</tr>
+</tbody>
+</table>
+<h2 id="agr-curation-schema-alliance-schema-prototype-phenotype-and-disease-annotation">AGR curation schema : Alliance Schema Prototype Phenotype and Disease Annotation</h2>
+<p>Alliance Phenotype and Disease Annotation Schema Prototype with LinkML</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">AGR curation schema</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Alliance Schema Prototype Phenotype and Disease Annotation</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">Alliance Phenotype and Disease Annotation Schema Prototype with LinkML</td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">alliance-genome/agr_curation_schema</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">model/schema/phenotypeAndDiseaseAnnotation.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['genomics']</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">71</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">225</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.577639751552795</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.9658385093167702</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sesar">SESAR :</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">SESAR</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['earth science']</td>
+</tr>
+</tbody>
+</table>
+<h2 id="obographs">OBOGraphs :</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">OBOGraphs</td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">biodatamodels/obograph</td>
+</tr>
+<tr>
+<td align="center">domain</td>
+<td align="center">['ontologies']</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ghgc-metadata-metadata-schema-for-the-german-human-genome-phenome-archive-ghga">GHGC Metadata : Metadata schema for the German Human Genome-Phenome Archive (GHGA)</h2>
+<p>None</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">GHGC Metadata</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Metadata schema for the German Human Genome-Phenome Archive (GHGA)</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://ghga-de.github.io/ghga-metadata-schema/">https://ghga-de.github.io/ghga-metadata-schema/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">ghga-de/ghga-metadata-schema</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">src/schema/ghgc.yaml</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">errors</td>
+<td align="center">["Error with obtaining schema for GHGC Metadata: [Errno 2] No such file or directory: '/Users/cjm/repos/linkml-registry/tmp/ghga-metadata-schema/src/schema/ghgc.yaml'"]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mianct-minimal-information-about-a-new-cell-type">MIANCT : Minimal Information About a new Cell Type</h2>
+<p>This schema is CJM's attempt to translate Tiago's <a href="https://docs.google.com/document/d/1EVgs2Z5dpJs7cbuSBwWlg1xOWQEqMtbSKRGgdneXnU8/edit#">minimal info doc</a> into a LinkML schema</p>
+<p>The schema is fairly minimal and is in the form of a "checklist" style schema. It is a set of fields mostly associated with this class:</p>
+<ul>
+<li><a href="CellType.md">CellType</a></li>
+</ul>
+<p>There are a set of examples here:</p>
+<ul>
+<li><a href="https://github.com/cmungall/mianct-schema/tree/main/tests/input">tests/input</a></li>
+</ul>
+<p>Currently the examples are YAML, but the YAML is deliberately flat as this is a "checklist" schema, and we could have TSV/CSV/xlsx here</p>
+<p>TODO:</p>
+<ul>
+<li>include "packages" and "checklists"; e.g.<ul>
+<li>a neuron package would have the enum for morphologies constrained</li>
+<li>a transcriptomics package would make it required to enter the set of marker genes</li>
+<li>see <a href="https://cmungall.github.io/mixs-source/">MIxS schema</a> for example of how this might work</li>
+</ul>
+</li>
+<li>document how this relates to dosdp/robot templates</li>
+</ul>
+<p>When should one provide an entry for a cell type in a MIANCT sheet?</p>
+<ul>
+<li>When there is a claim of a new cell class (type or state) that has not been described before</li>
+<li>When new information is discovered for a previously cataloged type that might influence its cataloguing (i.e. description of the presence in a different species or in a new location)</li>
+<li>When a cell type mentioned in the article has been described before, but is not yet catalogued on an authoritative source like the Cell Ontology.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">MIANCT</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Minimal Information About a new Cell Type</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">This schema is CJM's attempt to translate Tiago's <a href="https://docs.google.com/document/d/1EVgs2Z5dpJs7cbuSBwWlg1xOWQEqMtbSKRGgdneXnU8/edit#">minimal info doc</a> into a LinkML schema</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>The schema is fairly minimal and is in the form of a "checklist" style schema. It is a set of fields mostly associated with this class:</p>
+<ul>
+<li><a href="CellType.md">CellType</a></li>
+</ul>
+<p>There are a set of examples here:</p>
+<ul>
+<li><a href="https://github.com/cmungall/mianct-schema/tree/main/tests/input">tests/input</a></li>
+</ul>
+<p>Currently the examples are YAML, but the YAML is deliberately flat as this is a "checklist" schema, and we could have TSV/CSV/xlsx here</p>
+<p>TODO:</p>
+<ul>
+<li>include "packages" and "checklists"; e.g.<ul>
+<li>a neuron package would have the enum for morphologies constrained</li>
+<li>a transcriptomics package would make it required to enter the set of marker genes</li>
+<li>see <a href="https://cmungall.github.io/mixs-source/">MIxS schema</a> for example of how this might work</li>
+</ul>
+</li>
+<li>document how this relates to dosdp/robot templates</li>
+</ul>
+<p>When should one provide an entry for a cell type in a MIANCT sheet?</p>
+<ul>
+<li>When there is a claim of a new cell class (type or state) that has not been described before</li>
+<li>When new information is discovered for a previously cataloged type that might influence its cataloguing (i.e. description of the presence in a different species or in a new location)</li>
+<li>When a cell type mentioned in the article has been described before, but is not yet catalogued on an authoritative source like the Cell Ontology.|
+|homepage|<a href="https://cmungall.github.io/mianct-schema/">https://cmungall.github.io/mianct-schema/</a>|
+|github_repo|cmungall/mianct-schema|
+|schema_relative_path|model/schema/mianct.yaml|
+|license|<a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a>|
+|class_count|2|
+|slot_count|11|
+|enum_count|3|
+|type_count|15|
+|github_stars|2|
+|proportion_elements_with_a_description|0.6451612903225806|
+|proportion_elements_mapped|0.9354838709677419|</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
