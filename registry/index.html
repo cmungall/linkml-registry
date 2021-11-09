@@ -27,6 +27,14 @@
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SYBSJVZ23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2SYBSJVZ23');
+  </script>
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -59,6 +67,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#nmdc-schema">NMDC Schema</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#biolink-model">Biolink Model</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#simple-standard-sharing-object-mappings">Simple Standard Sharing Object Mappings</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#knowledge-graph-change-language">Knowledge Graph Change Language</a>
@@ -83,9 +93,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#hot-termci">HOT-TermCI</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#agr-persistent-schema">AGR persistent schema</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#alliance-schema-prototype-phenotype-and-disease-annotation">Alliance Schema Prototype Phenotype and Disease Annotation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#alliance-of-genome-resources-persistent-schema">Alliance of Genome Resources Persistent Schema</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#_2"></a>
     </li>
@@ -203,7 +211,7 @@
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">4</td>
+<td align="center">10</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -322,11 +330,79 @@
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">4</td>
+<td align="center">5</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
 <td align="center">0.86</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_mapped</td>
+<td align="center">0.99</td>
+</tr>
+</tbody>
+</table>
+<h2 id="biolink-model">Biolink Model</h2>
+<p>Entity and association taxonomy and datamodel for life-sciences data</p>
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">Biolink-Model</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Biolink Model</td>
+</tr>
+<tr>
+<td align="center">homepage</td>
+<td align="center"><a href="https://biolink.github.io/biolink-model/">https://biolink.github.io/biolink-model/</a></td>
+</tr>
+<tr>
+<td align="center">github_repo</td>
+<td align="center">biolink/biolink-model</td>
+</tr>
+<tr>
+<td align="center">schema_relative_path</td>
+<td align="center">biolink-model.yaml</td>
+</tr>
+<tr>
+<td align="center">license</td>
+<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td align="center">topics</td>
+<td align="center">genomics; disease; phenotype; expression; GO; GO-CAM; human biology; model organism biology; biochemistry; biology</td>
+</tr>
+<tr>
+<td align="center">class_count</td>
+<td align="center">257</td>
+</tr>
+<tr>
+<td align="center">slot_count</td>
+<td align="center">608</td>
+</tr>
+<tr>
+<td align="center">enum_count</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">type_count</td>
+<td align="center">27</td>
+</tr>
+<tr>
+<td align="center">github_stars</td>
+<td align="center">68</td>
+</tr>
+<tr>
+<td align="center">proportion_elements_with_a_description</td>
+<td align="center">0.67</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_mapped</td>
@@ -390,7 +466,7 @@
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">6</td>
+<td align="center">10</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -442,7 +518,7 @@
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">4</td>
+<td align="center">13</td>
 </tr>
 <tr>
 <td align="center">errors</td>
@@ -507,7 +583,7 @@ An example of a use of this is https://github.com/cmungall/obographviz</p>
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">3</td>
+<td align="center">4</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -594,7 +670,7 @@ from the linkml yaml into SQL DDL</p>
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">7</td>
+<td align="center">10</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -732,7 +808,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">4</td>
+<td align="center">10</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -800,7 +876,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">3</td>
+<td align="center">4</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -868,7 +944,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">4</td>
+<td align="center">5</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -920,7 +996,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">4</td>
+<td align="center">8</td>
 </tr>
 </tbody>
 </table>
@@ -1040,7 +1116,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">2</td>
+<td align="center">3</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>
@@ -1052,8 +1128,8 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 </tbody>
 </table>
-<h2 id="agr-persistent-schema">AGR persistent schema</h2>
-<p>Alliance Schema Prototype</p>
+<h2 id="alliance-of-genome-resources-persistent-schema">Alliance of Genome Resources Persistent Schema</h2>
+<p>Alliance Persistent Schema</p>
 <table>
 <thead>
 <tr>
@@ -1064,15 +1140,15 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 <tbody>
 <tr>
 <td align="center">name</td>
-<td align="center">AGR persistent schema</td>
+<td align="center">Alliance of Genome Resource Persistent Schema</td>
 </tr>
 <tr>
 <td align="center">title</td>
-<td align="center">AGR persistent schema</td>
+<td align="center">Alliance of Genome Resources Persistent Schema</td>
 </tr>
 <tr>
 <td align="center">github_repo</td>
-<td align="center">alliance-genome/agr_persistent_schema</td>
+<td align="center">alliance-genome/agr_curation_schema</td>
 </tr>
 <tr>
 <td align="center">schema_relative_path</td>
@@ -1087,96 +1163,12 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 <td align="center">genomics</td>
 </tr>
 <tr>
-<td align="center">class_count</td>
-<td align="center">31</td>
-</tr>
-<tr>
-<td align="center">slot_count</td>
-<td align="center">158</td>
-</tr>
-<tr>
-<td align="center">enum_count</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="center">type_count</td>
-<td align="center">15</td>
-</tr>
-<tr>
-<td align="center">github_stars</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">proportion_elements_with_a_description</td>
-<td align="center">0.64</td>
-</tr>
-<tr>
-<td align="center">proportion_elements_mapped</td>
-<td align="center">0.95</td>
-</tr>
-</tbody>
-</table>
-<h2 id="alliance-schema-prototype-phenotype-and-disease-annotation">Alliance Schema Prototype Phenotype and Disease Annotation</h2>
-<p>Alliance Phenotype and Disease Annotation Schema Prototype with LinkML</p>
-<table>
-<thead>
-<tr>
-<th align="center">key</th>
-<th align="center">value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">name</td>
-<td align="center">AGR curation schema</td>
-</tr>
-<tr>
-<td align="center">title</td>
-<td align="center">Alliance Schema Prototype Phenotype and Disease Annotation</td>
-</tr>
-<tr>
-<td align="center">github_repo</td>
-<td align="center">alliance-genome/agr_curation_schema</td>
-</tr>
-<tr>
-<td align="center">schema_relative_path</td>
-<td align="center">model/schema/phenotypeAndDiseaseAnnotation.yaml</td>
-</tr>
-<tr>
-<td align="center">license</td>
-<td align="center"><a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a></td>
-</tr>
-<tr>
-<td align="center">topics</td>
-<td align="center">genomics</td>
-</tr>
-<tr>
-<td align="center">class_count</td>
-<td align="center">71</td>
-</tr>
-<tr>
-<td align="center">slot_count</td>
-<td align="center">225</td>
-</tr>
-<tr>
-<td align="center">enum_count</td>
-<td align="center">11</td>
-</tr>
-<tr>
-<td align="center">type_count</td>
-<td align="center">15</td>
-</tr>
-<tr>
 <td align="center">github_stars</td>
 <td align="center">3</td>
 </tr>
 <tr>
-<td align="center">proportion_elements_with_a_description</td>
-<td align="center">0.57</td>
-</tr>
-<tr>
-<td align="center">proportion_elements_mapped</td>
-<td align="center">0.96</td>
+<td align="center">errors</td>
+<td align="center">Error with obtaining schema for Alliance of Genome Resource Persistent Schema: [Errno 2] No such file or directory: '/Users/cjm/repos/linkml-registry/tmp/agr_curation_schema/src/schema/alliance_schema.yaml'</td>
 </tr>
 </tbody>
 </table>
@@ -1224,7 +1216,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">1</td>
+<td align="center">3</td>
 </tr>
 </tbody>
 </table>
@@ -1260,7 +1252,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">2</td>
+<td align="center">3</td>
 </tr>
 <tr>
 <td align="center">errors</td>
@@ -1345,7 +1337,7 @@ For full context/motivation see the <a href="https://github.com/cmungall/chem-sc
 </tr>
 <tr>
 <td align="center">github_stars</td>
-<td align="center">2</td>
+<td align="center">3</td>
 </tr>
 <tr>
 <td align="center">proportion_elements_with_a_description</td>

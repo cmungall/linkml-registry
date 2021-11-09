@@ -2,257 +2,257 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://linkml.github.io/linkml-registry/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/Evaluation/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/SchemaMetadata/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/SchemaRegistry/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/base_purl/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/count_statistic/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/credits/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/description/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/domain/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/entries/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__class_count/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__enum_count/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__errors/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__github_stars/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__proportion_elements_mapped/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__proportion_elements_with_a_description/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__score/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__slot_count/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/evaluation__type_count/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/github_repo/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/github_stars/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/home/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/homepage/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/issue_tracker/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/license/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/license_enum/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/name/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/proportion_statistic/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/registry/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/schema_purl/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/schema_relative_path/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/schema_url/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/score/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/statistic/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/title/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/topics/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Boolean/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Date/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Datetime/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Decimal/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Double/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Float/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/HttpsIdentifier/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Integer/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Ncname/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Nodeidentifier/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Objectidentifier/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/String/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Time/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Uri/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://linkml.github.io/linkml-registry/types/Uriorcurie/</loc>
-         <lastmod>2021-07-08</lastmod>
+         <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
